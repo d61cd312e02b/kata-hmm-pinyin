@@ -133,8 +133,9 @@ def get_all_pinyin_list(pinyin_list):
 
     return all_pinyin_list
 
-def get_all_hangzi_by_pinyin(pinyin_str, init_words_probability, transmission_probability,
-                             reverse_emit_pinyin_probability):
+
+def get_all_hanzi_by_pinyin(pinyin_str, init_words_probability, transmission_probability,
+                            reverse_emit_pinyin_probability):
     all_hanzi_list = []
 
     for raw_pinyin_list in cut_pinyin(pinyin_str):
@@ -154,12 +155,9 @@ def get_all_hangzi_by_pinyin(pinyin_str, init_words_probability, transmission_pr
     return all_hanzi_list
 
 
-
-
 for pylst in cut_pinyin('huijiakankan'):
     for lst in get_all_pinyin_list(pylst):
         print(lst)
-
 
 # for lst in cut_pinyin('xiangmuguanli'):
 #     print(lst)
