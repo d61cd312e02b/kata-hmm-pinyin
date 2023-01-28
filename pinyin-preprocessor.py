@@ -43,7 +43,7 @@ def get_words_pinyin(word):
 
 
 def get_jieba_word(word):
-    return list(jieba.cut_for_search(word))
+    return list(jieba.cut(word))
 
 
 preprocess_words_data("data/global_wordfreq.release.txt")
